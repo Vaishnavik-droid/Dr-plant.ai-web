@@ -1,0 +1,19 @@
+.vfrc-launcher,
+.vfrc-button,
+.vfrc-chat-input--button {
+  background-color: #004741 !important;
+  border-color: #004741 !important;
+}
+
+.vfrc-launcher:hover,
+.vfrc-button:hover,
+.vfrc-chat-input--button:hover {
+  background-color: #003832 !important;
+  border-color: #003832 !important;
+}
+
+.vfrc-user-response .vfrc-message {
+  background-color: #004741 !important;
+  border-color: #004741 !important;
+  color: #fff !important;
+}

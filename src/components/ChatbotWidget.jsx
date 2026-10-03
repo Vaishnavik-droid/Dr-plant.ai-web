@@ -4,7 +4,7 @@ import { getAssistantReply, suggestedQuestions } from '../services/aiService'
 
 const openingMessage = {
   sender: 'bot',
-  text: 'Hi! Ask me about crop stress, disease signs, watering, or nutrients.'
+  text: 'Hi, I’m Dr.PlantAI. Tell me the crop, what symptoms you see, and when they started. This chat can’t inspect photos; use Diagnose for an image-based check.'
 }
 
 export function ChatbotWidget() {
@@ -53,7 +53,7 @@ export function ChatbotWidget() {
             <span className="chatbot-icon"><Bot size={18} /></span>
             <span className="chatbot-title">
               <strong>Dr.Plant AI</strong>
-              <small>Plant care assistant</small>
+              <small>Crop disease & care guide</small>
             </span>
             <button className="chatbot-close" type="button" onClick={() => setOpen(false)} aria-label="Close chatbot">
               <X size={18} />
@@ -69,7 +69,7 @@ export function ChatbotWidget() {
 
             {messages.length === 1 && (
               <div className="chatbot-suggestions" aria-label="Suggested questions">
-                {suggestedQuestions.slice(0, 2).map((question) => (
+                {suggestedQuestions.slice(0, 3).map((question) => (
                   <button key={question} type="button" onClick={() => sendMessage(question)}>
                     {question}
                   </button>
@@ -85,7 +85,7 @@ export function ChatbotWidget() {
             <input
               value={input}
               onChange={(event) => setInput(event.target.value)}
-              placeholder="Ask about your plant..."
+              placeholder="Ask about a crop or symptom..."
               aria-label="Message Dr.Plant AI"
             />
             <button type="submit" aria-label="Send message" disabled={loading || !input.trim()}>
