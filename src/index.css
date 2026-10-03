@@ -324,6 +324,9 @@ button { cursor: pointer; }
 .arrow { color: var(--muted); }
 .section-head-row { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
 .card-image { width: 100%; height: 220px; object-fit: cover; border-radius: 22px 22px 0 0; }
+.image-credit { display: block; margin: 0 0 12px; color: var(--muted); font-size: 0.72rem; line-height: 1.4; }
+.image-credit a { color: var(--primary); }
+.detail-copy .image-credit { margin-top: 16px; }
 .crop-card, .disease-card { overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .crop-card:hover, .disease-card:hover { transform: translateY(-5px); box-shadow: 0 22px 42px rgba(26, 77, 52, 0.16); }
 .crop-card .card-image, .disease-card .card-image { height: 238px; }

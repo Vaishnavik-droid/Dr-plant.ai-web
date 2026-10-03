@@ -15,6 +15,13 @@ export function DiseaseDetails() {
           <span className="eyebrow">{disease.crop}</span>
           <h1>{disease.name}</h1>
           <p>{disease.summary}</p>
+          {disease.imageCredit && (
+            <small className="image-credit">
+              Photo: <a href={disease.imageCredit.sourceUrl} target="_blank" rel="noreferrer">{disease.imageCredit.source}</a>
+              {' · '}
+              <a href={disease.imageCredit.licenseUrl} target="_blank" rel="noreferrer">{disease.imageCredit.license}</a>
+            </small>
+          )}
         </div>
       </div>
 

@@ -10,6 +10,13 @@ export function DiseaseCard({ disease }) {
           <span className="chip">{disease.crop}</span>
           <span className="chip muted-chip">{disease.type}</span>
         </div>
+        {disease.imageCredit && (
+          <small className="image-credit">
+            Photo: <a href={disease.imageCredit.sourceUrl} target="_blank" rel="noreferrer">{disease.imageCredit.source}</a>
+            {' · '}
+            <a href={disease.imageCredit.licenseUrl} target="_blank" rel="noreferrer">{disease.imageCredit.license}</a>
+          </small>
+        )}
         <h3>{disease.name}</h3>
         <p>{disease.summary}</p>
         <div className="meta-row">
