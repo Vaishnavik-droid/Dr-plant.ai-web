@@ -5,10 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dr-plantai-web</title>
-    <script type="module" crossorigin src="/assets/index-jx8pm3wY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-gI5YUXPl.css">
+    <script type="module" crossorigin src="/assets/index-A0GPeUpa.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-HxjPdQpF.css">
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: '6ac0b9ce0edab16973519fa5' },
+            url: 'https://general-runtime.voiceflow.com',
+            assistant: {
+              color: '#004741',
+              stylesheet: `${window.location.origin}/voiceflow-theme.css`
+            },
+            voice: { url: 'https://runtime-api.voiceflow.com' }
+          });
+        };
+        v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+        v.type = 'text/javascript';
+        s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
   </body>
 </html>

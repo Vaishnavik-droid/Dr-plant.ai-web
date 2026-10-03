@@ -1,8 +1,8 @@
 export const suggestedQuestions = [
-  'What is wrong with my tomato plant?',
-  'Why are my leaves turning yellow?',
-  'How often should I water my crop?',
-  'What causes leaf spots?'
+  'My tomato leaves have brown rings. What should I check?',
+  'Why are my apple leaves getting dark spots?',
+  'How can I manage powdery mildew on squash?',
+  'What should I do about yellow mottling on citrus leaves?'
 ]
 
 export const getAssistantReply = async (message = '', history = []) => {
