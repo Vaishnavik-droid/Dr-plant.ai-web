@@ -29,7 +29,6 @@ import { SellerProfile } from './pages/SellerProfile'
 import { SellerSettings } from './pages/SellerSettings'
 import { RoleGuard } from './components/RoleGuard'
 import { SellerLayout } from './components/SellerLayout'
-import { ChatbotWidget } from './components/ChatbotWidget'
 import { getCurrentProfile } from './services/authService'
 
 function AppRoutes() {
@@ -80,7 +79,7 @@ function AppRoutes() {
     ? <SellerLayout>{routes}</SellerLayout>
     : <div className="app-shell"><Navbar /><main className="page-content">{routes}</main><Footer /></div>
 
-  return <>{page}{location.pathname !== '/assistant' && <ChatbotWidget />}</>
+  return page
 }
 
 function App() {
