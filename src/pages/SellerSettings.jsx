@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom'
+
+export function SellerSettings() { return <div className="seller-container"><div className="seller-page-heading"><div><span className="eyebrow">Seller account</span><h1>Settings</h1><p>Frontend demo settings are ready for future backend account and notification preferences.</p></div></div><section className="seller-panel settings-list"><Link to="/shop-owner/profile"><strong>Shop profile</strong><span>Update your shop details and location</span></Link><Link to="/shop-owner/products"><strong>Catalogue settings</strong><span>Manage product visibility and stock</span></Link><Link to="/shop-owner/orders"><strong>Order workflow</strong><span>Review and update fulfilment statuses</span></Link></section></div> }
