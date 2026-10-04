@@ -1,6 +1,6 @@
 # Dr-Plant AI
 
-website link-https://dr-plant-ai-web.vercel.app/shop
+website link-https://dr-plant-ai-web.vercel.app/
 
 APK Url - https://github.com/sadhanakoravi022/Dr.-Plant-AI/actions/runs/37170875297/artifacts/11291466898
 
