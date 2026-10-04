@@ -1,6 +1,6 @@
 # Dr-Plant AI
 
-website link-
+website link-https://dr-plant-ai-web.vercel.app/shop
 APK Url - https://github.com/sadhanakoravi022/Dr.-Plant-AI/actions/runs/37170875297/artifacts/11291466898
 
 > An AI-assisted plant health and agricultural support platform for crop information, disease awareness, plant-care guidance, and local agricultural shopping.
