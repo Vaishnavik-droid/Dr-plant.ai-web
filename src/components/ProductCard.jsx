@@ -3,12 +3,17 @@ import { MapPin, ShoppingCart, Star } from 'lucide-react'
 import { addToCart } from '../data/marketplace'
 
 export function ProductCard({ product }) {
+  const fallbackImage = 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80'
   const discount = Math.round((1 - product.price / product.mrp) * 100)
+  const handleImageError = (event) => {
+    event.currentTarget.src = fallbackImage
+    event.currentTarget.onerror = null
+  }
 
   return (
     <article className="product-card">
       <Link to={`/product/${product.id}`} className="product-image-link">
-        <img src={product.image} alt={product.name} className="product-image" />
+        <img src={product.image || fallbackImage} alt={product.name} className="product-image" onError={handleImageError} />
         <span className="discount-badge">{discount}% off</span>
       </Link>
       <div className="product-card-body">
