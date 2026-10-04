@@ -1,5 +1,8 @@
 # Dr-Plant AI
 
+website link-
+mobile application link-
+
 > An AI-assisted plant health and agricultural support platform for crop information, disease awareness, plant-care guidance, and local agricultural shopping.
 
 Dr-Plant AI is a React-based web application that brings crop knowledge, plant diagnosis workflows, an AI plant-care assistant, weather insights, multilingual support, and a local agricultural marketplace into one interface.
