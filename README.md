@@ -351,16 +351,6 @@ The following are proposed improvements, not current repository functionality:
 - Add server-side authorization, rate limiting, audit logging, and stricter CORS configuration.
 - Add production deployment documentation and continuous integration checks.
 
-## 👥 Team
-
-Team or member information was not found in the repository. Add project contributors here:
-
-- **Project lead:** Add name
-- **Frontend:** Add name
-- **AI/ML:** Add name
-- **Backend:** Add name
-- **Design and research:** Add name
-
 ## 📄 License
 
 License information has not been specified yet.
@@ -372,9 +362,3 @@ License information has not been specified yet.
 - Supabase for authentication and Edge Functions
 - Google Gemini for the conversational AI integration
 - Framer Motion and Lucide React for interface animation and icons
-
-## 📞 Contact
-
-Contact information was not found in the repository.
-
-For project-related communication, add a maintainer email, issue tracker instructions, or project website here.
