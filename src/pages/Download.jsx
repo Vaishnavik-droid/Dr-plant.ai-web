@@ -1,7 +1,16 @@
 import { Download as DownloadIcon, Smartphone, WifiOff, Leaf, ShieldCheck, History } from 'lucide-react'
 
-// Replace this with the hosted APK URL when the Android release is available.
-const APP_DOWNLOAD_URL = ''
+const APP_DOWNLOAD_URL = 'https://github.com/sadhanakoravi022/Dr.-Plant-AI/actions/runs/37170875297/artifacts/11291466898'
+const HAS_VALID_DOWNLOAD_URL = (() => {
+  if (!APP_DOWNLOAD_URL) return false
+
+  try {
+    const parsedUrl = new URL(APP_DOWNLOAD_URL)
+    return parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:'
+  } catch {
+    return false
+  }
+})()
 
 export function Download() {
   return (
@@ -18,9 +27,21 @@ export function Download() {
           <li><History size={18} /> Save useful notes for later</li>
         </ul>
         <div className="cta-row">
-          {APP_DOWNLOAD_URL ? <a href={APP_DOWNLOAD_URL} className="primary-btn" download><DownloadIcon size={16} /> Download APK</a> : <button className="primary-btn disabled-btn" type="button" disabled><DownloadIcon size={16} /> APK coming soon</button>}
+          {HAS_VALID_DOWNLOAD_URL ? (
+            <a href={APP_DOWNLOAD_URL} className="primary-btn" target="_blank" rel="noopener noreferrer" download>
+              <DownloadIcon size={16} /> Download APK
+            </a>
+          ) : (
+            <button className="primary-btn disabled-btn" type="button" disabled>
+              <DownloadIcon size={16} /> APK coming soon
+            </button>
+          )}
         </div>
-        <small className="download-note">APK URL placeholder: configure <strong data-language-ignore>APP_DOWNLOAD_URL</strong> in this page when the real Android file is available.</small>
+        <small className="download-note">
+          {HAS_VALID_DOWNLOAD_URL
+            ? 'APK download link is ready.'
+            : 'The APK URL is invalid or missing. Add a real https://...apk file link in .env as VITE_APP_DOWNLOAD_URL.'}
+        </small>
       </div>
 
       <div className="device-mockup card big-device">
